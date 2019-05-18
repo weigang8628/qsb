@@ -6,154 +6,262 @@ h2 {}
 
 /* 漂浮窗1 */
 .float-tag {
-    position: fixed;
-    transform: translate(0, -50%);
-    right: 0;
-    top: 50%;
-    box-shadow: 0 0 10px #cccccc;
+  position: fixed;
+  transform: translate(0, -50%);
+  right: 0;
+  top: 50%;
+  box-shadow: 0 0 10px #cccccc;
 }
 
 .float-tag>ul {}
 
 .float-tag>ul>li {
-    width: 140px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  color: #ffffff;
 }
 
 .float-tag>ul>li:nth-child(1) {
-    background-color: aquamarine
+  background-color: aquamarine
 }
 
 .float-tag>ul>li:nth-child(2) {
-    background-color: #ff0000;
+  background-color: #ff0000;
 }
 
 .float-tag>ul>li:nth-child(3) {
-    background-color: blue
+  background-color: blue
 }
 
 .float-tag>ul>li>ul {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: -50px;
-    width: 190px;
-    background: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-    transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -50px;
+  width: 190px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  transition: all 0.5s;
 }
 
 .float-tag>ul>li:hover>ul {
-    right: 140px;
+  right: 140px;
 }
 
 .full-container {
-    width: 100%;
+  width: 100%;
 }
 
 .container {
-    width: 1340px;
-    margin: auto;
+  width: 1340px;
+  margin: auto;
 }
 
 // 头部
-.header{
-    .logo{
-        width: 175px;
-        img{
-            width: 100%;
-        }
-    }
-    // 导航
-    .nav{
-        line-height: 60px;
+.header {
+  .logo {
+    width: 175px;
 
-        a{
-display: inline-block;
-padding: 0 20px;
-        }
+    img {
+      width: 100%;
     }
+  }
+
+  // 导航
+  .nav {
+    line-height: 68px;
+    padding-left: 140px;
+
+    a {
+      display: inline-block;
+      padding: 0 20px;
+    }
+  }
+
+  // 登录
+  .login {
+    margin-top: 18px;
+
+    a {
+      display: inline-block;
+      background-color: rgba(21, 114, 216, 1);
+      color: #ffffff;
+      width: 120px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+    }
+  }
 }
+
 // banner产皮介绍
-.banner-cpjs{
-    background-color: aqua;
-    padding: 20px 0px;
-    .text{
-        width: 500px;
+.banner-cpjs {
+  background-color: rgba(0, 153, 255, 0.0784313725490196);
+  padding: 40px 0px;
+
+  .img {
+    img {
+      width: 590px;
     }
+  }
+
+  .text {
+    width: 700px;
+    padding-top: 100px;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      line-height: 24px;
+      padding-top: 20px;
+      font-size: 13px;
+    }
+
+    a {
+      margin-top: 30px;
+      background-color: rgba(22, 155, 213, 1);
+      display: inline-block;
+      width: 140px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 5px;
+    }
+  }
+}
+
+.cptitle {
+  padding-top: 48px;
+
+  h2,
+  h3 {
+    font-size: 24px;
+  }
+}
+
+.row {
+  marign: 0 -15px !important;
 }
 
 // 模块
 .mk {
-    ul {
-        li {
-            position: relative;
-            overflow: hidden;
-margin: 0 20px;
-            img {
-                width: 200px;
-            }
+  padding: 0 -15px;
 
-            .text {
-                .background();
-                position: absolute;
-                top: 0;
-                left: -200px;
-                width: 100%;
-                height: 100%;
-                padding: 20px;
-                box-sizing: border-box;
-                color: #ffffff;
+  ul {
 
-            }
+    li {
+      position: relative;
+      overflow: hidden;
+      margin: 0 15px;
 
-            .rotatetext {
-                transition: 0.2s;
-                perspective: 500;
-                transform-style: preserve-3d;
-                /*重要*/
-                transform: rotateY(90deg);
-            }
-        }
+      img {
+        width: 312px;
+      }
 
+      .text {
+        .background();
+        position: absolute;
+        top: 0;
+        left: -312px;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 36px;
+
+      }
+
+      .rotatetext {
+        transition: 0.2s;
+        perspective: 500;
+        transform-style: preserve-3d;
+        /*重要*/
+        transform: rotateY(90deg);
+      }
     }
+
+  }
 }
 
 // 合作伙伴
 .partner {
-    ul {
-        li {
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-            padding: 10px;
-            width: 250px;
-            margin: 10px;
-            .img {
-                width: 100px;
-                img {
-                    max-width: 100%;
-                    max-height: 100%;
-                }
-            }
+  ul {
+    li {
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      padding: 20px;
+      width: 398px;
+      height: 172px;
+      margin: 5px;
 
-            .text {
-                width: 150px;
+      .img {
+        width: 150px;
 
-                h3 {}
-
-                p {}
-
-                a {
-                    display: inline-block;
-                    padding: 10px 20px;
-                    background-color: #ff0000;
-                    color: #ffffff;
-                }
-            }
+        img {
+          max-width: 100%;
+          max-height: 100%;
         }
+      }
+
+      .text {
+        width: 220px;
+
+        h3 {
+          font-size: 24px;
+          font-weight: bold;
+          margin: 10px 0 10px 0;
+        }
+
+        p {
+          line-height: 20px;
+          font-size: 13px;
+        }
+
+        a {
+          margin-top: 20px;
+          border-radius: 5px;
+          display: inline-block;
+          width: 140px;
+          height: 34px;
+          line-height: 34px;
+          text-align: center;
+          background-color: rgba(0, 153, 255, 1);
+          color: #ffffff;
+        }
+      }
     }
+  }
+}
+
+// 底部footer
+.footer {
+  height: 68px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+  }
+
+  .logo {}
+
+  .bq {
+    line-height: 68px;
+  }
+}
+.footbq{
+  text-align: center;
+  color: #999999;
+  line-height: 18px;
+  padding: 5px 0;
+  font-size: 12px;
 }
