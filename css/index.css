@@ -313,11 +313,18 @@ h5 {
 .header {
   background-color: #ffffff;
 }
-.header .logo {
-  width: 175px;
-}
 .header .logo img {
-  width: 100%;
+  width: 175px;
+  float: left;
+}
+.header .logo span {
+  display: inline-block;
+  font-size: 20px;
+  height: 38px;
+  line-height: 38px;
+  padding-left: 20px;
+  margin-top: 13px;
+  border-left: 1px solid #ff0000;
 }
 .header .nav {
   line-height: 68px;
