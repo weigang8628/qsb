@@ -86,6 +86,7 @@ h2 {}
 // 头部
 .header {
   background-color: #ffffff;
+  height: 69px;
   .logo {
     img {
       width: 175px;
@@ -96,9 +97,9 @@ h2 {}
       font-size: 20px;
       height: 38px;
       line-height: 38px;
-      padding-left: 20px;
-      margin-top: 13px;
-      border-left: 1px solid #ff0000;
+      padding-left: 15px;
+      margin: 13px 0 0 30px;
+      border-left: 1px solid #333333;
     }
   }
 
@@ -137,7 +138,17 @@ h2 {}
       height: 32px;
       line-height: 32px;
       text-align: center;
+      border-radius: 5px;
     }
+  }
+  //注册的页面
+  .login-zc{
+    font-size: 14px;
+    color: #666666;
+    a{
+    margin-left: 5px;
+    width: 70px;  
+    } 
   }
 
   //登录成功后状态
@@ -427,6 +438,11 @@ h2 {}
 
 //新闻列表
 .new-list {
+  h1{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+  }
   .item {
     padding: 10px 0;
 
@@ -708,6 +724,11 @@ h2 {}
       color: #666666;
     }
   }
+}
+//解决方案第二块
+.jjfa-list2{
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 // 成功案例列表
@@ -1074,10 +1095,10 @@ h2 {}
 // 注册
 .register-box{
   margin: 30px auto 60px auto;
-  padding: 20px;
+  padding: 20px 110px 20px 20px;
   background-color: #ffffff;
   .back{
-    color: #1572d8;
+    color: rgba(0, 153, 255, 1);
   }
   .list{
     padding: 50px 0 100px 0;
@@ -1113,7 +1134,7 @@ h2 {}
           margin-right: 8px;
         }
         a{
-          background-color: #1572d8;
+          background-color: rgba(0, 153, 255, 1);
           color: #ffffff;
           display: inline-block;
           width: 130px;
@@ -1122,7 +1143,56 @@ h2 {}
           line-height:38px;
         }
       }
+      .yd{
+        padding-left: 150px;
+        color: #666666;
+        font-size: 14px;
+        margin-top: 30px;
+        a{
+          color: rgba(0, 153, 255, 1);
+        }
+      }
+      .zc{
+        margin-top: 35px;
+        padding-left: 220px;
+        a{
+          background-color: rgba(0, 153, 255, 1);
+          display: inline-block;
+          width: 300px;
+          color: #ffffff;
+          border-radius: 5px;
+          height: 38px;
+          font-size: 13px;
+          line-height: 38px;
+        }
+      }
     }
   }
-
+}
+//企业公告
+.qygg-list{
+  .item{
+    .date{
+        width: 80px;
+        height: 80px;
+        background-color: #1572d8;
+        color: #ffffff;
+        text-align: center;
+      p:nth-child(1){
+        font-size: 16px;
+        padding-top: 20px;
+      }
+      p:nth-child(2){
+        padding-top: 3px;
+        font-size: 26px;
+        
+      }
+    }
+    .text{
+      width: 1230px;
+      p{
+        padding-top: 10px;
+      }
+    }
+  }
 }
