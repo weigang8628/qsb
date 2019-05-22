@@ -20,6 +20,16 @@
         obj.init();
     });
 </script>
+<script type="text/javascript">
+    $(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
 <style>
     ul,
     li {
@@ -192,6 +202,8 @@
             </div>
         </div>
     </div>
+
+    <!-- 11111 -->
 </body>
 
 </html>

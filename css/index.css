@@ -1180,3 +1180,61 @@ h5 {
 .qygg-list .item .text p {
   padding-top: 10px;
 }
+.mbxz .search {
+  background-color: #cccccc;
+  margin-top: -40px;
+  overflow: hidden;
+}
+.mbbox .rzmb {
+  width: 600px;
+}
+.mbbox .rzmb .rzmb-t {
+  background-color: #1572d8;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  height: 60px;
+  line-height: 60px;
+  color: #ffffff;
+  font-size: 16px;
+}
+.mbbox .rzmb .rzmb-t p {
+  float: left;
+  text-align: left;
+}
+.mbbox .rzmb .rzmb-t p:nth-child(1) {
+  width: 130px;
+}
+.mbbox .rzmb .rzmb-t p:nth-child(2) {
+  width: 130px;
+  text-align: center;
+}
+.mbbox .rzmb .rzmb-list ul li {
+  border-bottom: 1px solid #cccccc;
+  overflow: hidden;
+  font-size: 13px;
+}
+.mbbox .rzmb .rzmb-list ul li img {
+  display: inline;
+}
+.mbbox .rzmb .rzmb-list ul li p {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.mbbox .rzmb .rzmb-list ul li p.title {
+  width: 200px;
+}
+.mbbox .rzmb .rzmb-list ul li p.info {
+  width: 160px;
+}
+.mbbox .rzmb .rzmb-list ul li p.downloadnum {
+  width: 120px;
+}
+.mbbox .rzmb .rzmb-list ul li p.yl {
+  width: 60px;
+}
+.mbbox .rzmb .rzmb-list ul li p.download {
+  width: 60px;
+}
