@@ -1,15 +1,10 @@
-function mag(show, bigshow, smallshow, mask, bigitem) {
+function mag(show, bigshow, smallshow, mask, bigitem,obj) {
   this.show = show;
   this.bigshow = bigshow;
   this.smallshow = smallshow;
   this.mask = mask;
   this.bigitem = bigitem;
-  this.obj = {
-    prev: '.prev',
-    next: '.next',
-    middle: '.middle',
-    middleBox: '.middle_box'
-  }
+  this.obj = obj
 }
 mag.prototype = {
   init: function () {

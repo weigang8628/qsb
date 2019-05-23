@@ -7,8 +7,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>解决方案</title>
   <link rel="stylesheet" href="./css/index.css">
-  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script> -->
+  <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/lb.js"></script>
+  <script>
+    $(function () {
+       var obj = new mag('#lb1 .lbshow', '#lb1 .bigshow', '#lb1 .smallshow', '#lb1 .mask', '#lb1 .bigitem', {
+            prev: '#lb1 .prev',
+            next: '#lb1 .next',
+            middle: '#lb1 .middle',
+            middleBox: '#lb1 .middle_box'
+        });
+        obj.init();
+        var obj1 = new mag('#lb2 .lbshow', '#lb2 .bigshow', '#lb2 .smallshow', '#lb2 .mask', '#lb2 .bigitem', {
+            prev: '#lb2 .prev',
+            next: '#lb2 .next',
+            middle: '#lb2 .middle',
+            middleBox: '#lb2 .middle_box'
+        });
+        obj1.init();
+
+    });
+  </script>
 </head>
 
 <body>
@@ -39,7 +60,35 @@
   <div class="jjfa-list">
     <div class="container clearfix">
       <div class="img pull-left">
-        <img src="./images/cp.png" alt="" srcset="">
+        <div class="bg_left" id="lb1">
+          <div class="lbshow">
+            <img src="./images/img1.png" alt="">
+            <div class="mask"></div>
+          </div>
+          <div class="smallshow">
+            <p class="prev prevnone"></p>
+            <div class="middle_box">
+              <ul class="middle">
+                <li><img src="./images/img1.png" alt=""></li>
+                <li><img src="./images/img2.png" alt=""></li>
+                <li><img src="./images/img3.png" alt=""></li>
+                <li><img src="./images/img4.png" alt=""></li>
+                <li><img src="./images/img5.png" alt=""></li>
+                <li><img src="./images/img6.png" alt=""></li>
+                <li><img src="./images/img7.png" alt=""></li>
+                <li><img src="./images/img8.png" alt=""></li>
+              </ul>
+            </div>
+            <p class="next "></p>
+          </div>
+        </div>
+        <div class="bg_right">
+          <div class="bigshow">
+            <div class="bigitem">
+              <img src="./images/img1.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="text pull-right">
         <h2>税务筹划基础版</h2>
@@ -53,7 +102,35 @@
   <div class="jjfa-list jjfa-list2">
     <div class="container clearfix">
       <div class="img pull-right">
-        <img src="./images/cp.png" alt="" srcset="">
+          <div class="bg_left" id="lb2">
+              <div class="lbshow lbshow1">
+                <img src="./images/img1.png" alt="">
+                <div class="mask"></div>
+              </div>
+              <div class="smallshow smallshow1">
+                <p class="prev prevnone"></p>
+                <div class="middle_box">
+                  <ul class="middle">
+                    <li><img src="./images/img1.png" alt=""></li>
+                    <li><img src="./images/img2.png" alt=""></li>
+                    <li><img src="./images/img3.png" alt=""></li>
+                    <li><img src="./images/img4.png" alt=""></li>
+                    <li><img src="./images/img5.png" alt=""></li>
+                    <li><img src="./images/img6.png" alt=""></li>
+                    <li><img src="./images/img7.png" alt=""></li>
+                    <li><img src="./images/img8.png" alt=""></li>
+                  </ul>
+                </div>
+                <p class="next "></p>
+              </div>
+            </div>
+            <div class="bg_right">
+              <div class="bigshow bigshow1">
+                <div class="bigitem bigitem1">
+                  <img src="./images/img1.png" alt="">
+                </div>
+              </div>
+            </div>
       </div>
       <div class="text pull-left">
         <h2>税务筹划基础版</h2>

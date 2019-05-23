@@ -16,20 +16,23 @@
          mask   //放大的区域（黑色遮罩）
          bigitem  //放大的框
          */
-        var obj = new mag('.show', '.bigshow', '.smallshow', '.mask', '.bigitem');
+        var obj = new mag('#lb1 .show', '#lb1  .bigshow', '#lb1 .smallshow', '#lb1 .mask', '#lb1 .bigitem', {
+            prev: '#lb1 .prev',
+            next: '#lb1 .next',
+            middle: '#lb1 .middle',
+            middleBox: '#lb1 .middle_box'
+        });
+        obj.init();
+        var obj = new mag('#lb2 .show', '#lb2  .bigshow', '#lb2 .smallshow', '#lb2 .mask', '#lb2 .bigitem', {
+            prev: '#lb2 .prev',
+            next: '#lb2 .next',
+            middle: '#lb2 .middle',
+            middleBox: '#lb2 .middle_box'
+        });
         obj.init();
     });
 </script>
-<script type="text/javascript">
-    $(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
+
 <style>
     ul,
     li {
@@ -123,8 +126,9 @@
         cursor: pointer;
         padding: 0 5px;
     }
-		.smallshow .middle>li img {
-        height: 64px;  
+
+    .smallshow .middle>li img {
+        height: 64px;
     }
 
     .smallshow>p {
@@ -133,45 +137,45 @@
         width: 22px;
         height: 62px;
         margin-top: -16px;
-				background-color: #cccccc;
-				background-size: 50%;
+        background-color: #cccccc;
+        background-size: 50%;
     }
 
     .smallshow>.prev {
         left: 0;
         background-image: url(./images/hover-prev.png);
-				background-repeat: no-repeat;
-				background-position:center center;
+        background-repeat: no-repeat;
+        background-position: center center;
         transition: all 0.5s
     }
 
     .smallshow>.next {
         right: 0;
         background-image: url(./images/hover-next.png);
-				background-repeat: no-repeat;
-				background-position:center center;
+        background-repeat: no-repeat;
+        background-position: center center;
         transition: all 0.5s
     }
 
     .smallshow>.prev.prevnone {
         left: 0;
         background-image: url(./images/prev.png);
-				background-repeat: no-repeat;
-				background-position:center center;
+        background-repeat: no-repeat;
+        background-position: center center;
         cursor: not-allowed
     }
 
     .smallshow>.next.nextnone {
         right: 0;
         background-image: url(./images/next.png);
-				background-repeat: no-repeat;
-				background-position:center center;
+        background-repeat: no-repeat;
+        background-position: center center;
         cursor: not-allowed
     }
 </style>
 
 <body>
-    <div class="bg">
+    <div class="bg" id="lb1">
         <div class="bg_left">
             <div class="show">
                 <img src="./images/img1.png" alt="">
@@ -203,7 +207,41 @@
         </div>
     </div>
 
+
     <!-- 11111 -->
+    <div class="bg" id="lb2">
+        <div class="bg_left">
+            <div class="show">
+                <img src="./images/img1.png" alt="">
+                <div class="mask"></div>
+            </div>
+            <div class="smallshow">
+                <p class="prev prevnone"></p>
+                <div class="middle_box">
+                    <ul class="middle">
+                        <li><img src="./images/img1.png" alt=""></li>
+                        <li><img src="./images/img2.png" alt=""></li>
+                        <li><img src="./images/img3.png" alt=""></li>
+                        <li><img src="./images/img4.png" alt=""></li>
+                        <li><img src="./images/img5.png" alt=""></li>
+                        <li><img src="./images/img6.png" alt=""></li>
+                        <li><img src="./images/img7.png" alt=""></li>
+                        <li><img src="./images/img8.png" alt=""></li>
+                    </ul>
+                </div>
+                <p class="next "></p>
+            </div>
+        </div>
+        <div class="bg_right">
+            <div class="bigshow">
+                <div class="bigitem">
+                    <img src="./images/img1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
