@@ -1501,3 +1501,74 @@ h5 {
   background-position: center center;
   cursor: not-allowed;
 }
+.loginbox .loginbg {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+.loginbox .loginmain {
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 450px;
+  border-radius: 5px;
+  padding: 30px 70px;
+}
+.loginbox .loginmain .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  padding: 20px;
+  cursor: pointer;
+}
+.loginbox .loginmain h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 28px;
+}
+.loginbox .loginmain p {
+  border: 1px solid #cccccc;
+  line-height: 52px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.loginbox .loginmain p input {
+  line-height: 45px;
+  font-size: 16px;
+  color: #999999;
+  padding-left: 10px;
+  width: 95%;
+}
+.loginbox .loginmain .zdlogin {
+  padding: 20px 0;
+}
+.loginbox .loginmain .login-btn a {
+  display: block;
+  background-color: #1572d8;
+  color: #ffffff;
+  text-align: center;
+  height: 52px;
+  line-height: 52px;
+  border-radius: 5px;
+}
+.loginbox .loginmain .losepwd {
+  padding: 15px 0;
+}
+.loginbox .loginmain .losepwd a {
+  color: #1572d8;
+}
+.loginbox .loginmain .ljzc {
+  text-align: right;
+}
+.loginbox .loginmain .ljzc a {
+  color: #1572d8;
+}

@@ -38,11 +38,26 @@ $(document).ready(function () {
 
         });
     }
-    //登录弹出框
+    //右上角登录下拉框
     $('.js_login').on('mouseenter',function(){
         $(this).find('div.list').show()
     })
     $('.js_login').on('mouseleave',function(){
         $(this).find('div.list').hide()
+    })
+    // 全局登录弹出框
+    //显示弹出框
+    $('#js_login_btn').click(function(){
+        $('.loginbox').show()
+    })
+    // 背景
+    $('#js_loginbg').css(
+        {
+            height:document.documentElement.clientHeight + 'px'
+        }
+    )
+    // 关闭弹出层
+    $('#js_close').click(function(){
+        $('.loginbox').hide()
     })
 })
